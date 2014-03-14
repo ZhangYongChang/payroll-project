@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>358</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>主界面</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionLoad"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionReload"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuAddEmployee">
+    <property name="title">
+     <string>添加员工</string>
+    </property>
+    <addaction name="actionAddSalariedEmployee"/>
+    <addaction name="actionAddCommionedEmployee"/>
+    <addaction name="actionAddHourlyEmployee"/>
+   </widget>
+   <widget class="QMenu" name="menuDeleteEmployee">
+    <property name="title">
+     <string>删除员工</string>
+    </property>
+    <addaction name="actionDeleteByID"/>
+   </widget>
+   <widget class="QMenu" name="menuChangeEmployee">
+    <property name="title">
+     <string>修改员工</string>
+    </property>
+    <addaction name="actionChangeName"/>
+    <addaction name="actionChangeAddress"/>
+    <addaction name="actionChangeAsSalaried"/>
+    <addaction name="actionChangeAsCommioned"/>
+    <addaction name="actionChangeAsHourly"/>
+   </widget>
+   <widget class="QMenu" name="menuFindEmployee">
+    <property name="title">
+     <string>查看员工</string>
+    </property>
+    <addaction name="actionFindAllEmployee"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAddEmployee"/>
+   <addaction name="menuDeleteEmployee"/>
+   <addaction name="menuChangeEmployee"/>
+   <addaction name="menuFindEmployee"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionLoad">
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="iconText">
+    <string>daka</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionReload">
+   <property name="text">
+    <string>重新加载</string>
+   </property>
+  </action>
+  <action name="actionAddSalariedEmployee">
+   <property name="text">
+    <string>添加薪水员工</string>
+   </property>
+  </action>
+  <action name="actionAddCommionedEmployee">
+   <property name="text">
+    <string>添加销售员工</string>
+   </property>
+  </action>
+  <action name="actionAddHourlyEmployee">
+   <property name="text">
+    <string>添加钟点员工</string>
+   </property>
+  </action>
+  <action name="actionDeleteByID">
+   <property name="text">
+    <string>输入ID删除</string>
+   </property>
+  </action>
+  <action name="actionChangeName">
+   <property name="text">
+    <string>修改姓名</string>
+   </property>
+  </action>
+  <action name="actionChangeAddress">
+   <property name="text">
+    <string>修改地址</string>
+   </property>
+  </action>
+  <action name="actionChangeAsSalaried">
+   <property name="text">
+    <string>修改为薪水工</string>
+   </property>
+  </action>
+  <action name="actionChangeAsCommioned">
+   <property name="text">
+    <string>修改为销售工</string>
+   </property>
+  </action>
+  <action name="actionChangeAsHourly">
+   <property name="text">
+    <string>修改为钟点工</string>
+   </property>
+  </action>
+  <action name="actionFindAllEmployee">
+   <property name="text">
+    <string>查看详细资料</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于程序</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
